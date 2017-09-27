@@ -1,0 +1,8 @@
+theano
+lasagne
+numpy
+scipy
+gensim==0.12.3
+youtube-dl
+pafy
+git+https://github.com/gyglim/gm_submodular.git
