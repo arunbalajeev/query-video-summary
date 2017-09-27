@@ -27,7 +27,7 @@ Run `thumbnail_demo.ipynb`.
 2. Summarization- This demo shows how to get the query relevant summary of the video as a set of keyframes. It takes inputs- text query and video url.  
 Run `summarization_demo.ipynb`.
 
-![Image](https://people.ee.ethz.ch/~arunv/images/summarize_results.png)
+![Image](https://people.ee.ethz.ch/~arunv/images/summarize_result.png)
 
 If you use the relevance prediction of this code please cite:
     
