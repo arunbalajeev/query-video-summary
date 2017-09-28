@@ -90,9 +90,10 @@ def get_rel_Q_scores(val_fn, w2vmodel, query, frames):
         MEAN_PIXEL = [103.939, 116.779, 123.68]
         p = 0
         for i in range(len(image_names)):
-            image = image_names[i]
-            im = cv2.imread(image)
-            # im = im[:,:,::-1]
+            if not isinstance(image_names[i], np.ndarray):
+                im = cv2.imread(image_names[i])
+            else:
+                im = image_names[i]
             im = cv2.resize(im, (image_size, image_size), interpolation=cv2.INTER_CUBIC)
             im = im - MEAN_PIXEL
             data[i, :, :, :] = np.swapaxes(np.swapaxes(im, 1, 2), 0, 1)
