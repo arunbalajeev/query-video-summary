@@ -13,14 +13,7 @@ import os
 import model
 import gensim
 import theano.tensor as T
-import shells
 import cv2
-
-try:
-    import lasagne
-    import theano
-except (ImportError, AssertionError) as e:
-    print(e.message)
 
 # Load the configuration
 if not 'QVSUM_DATA_DIR' in os.environ:
@@ -28,6 +21,13 @@ if not 'QVSUM_DATA_DIR' in os.environ:
 config = ConfigParser.SafeConfigParser(os.environ)
 print('Loaded config file from %s' % config.read('%s/config.ini' % os.path.dirname(__file__))[0])
 
+import shells
+
+try:
+    import lasagne
+    import theano
+except (ImportError, AssertionError) as e:
+    print(e.message)
 
 def get_QAR_function():
     '''

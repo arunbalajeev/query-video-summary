@@ -9,15 +9,10 @@ import numpy as np
 import gm_submodular
 import model
 import theano
-import ConfigParser
-import os
 import lasagne
 import scipy.spatial.distance as dist
 import cv2
-
-config = ConfigParser.SafeConfigParser()
-print('Loaded config file from %s' % config.read('%s/config.ini' % os.path.dirname(__file__))[0])
-
+from qvsumm import config
 
 class Summ(gm_submodular.DataElement):
     '''
