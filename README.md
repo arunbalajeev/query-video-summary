@@ -1,8 +1,13 @@
 ## Query-adaptive Video Summarization via Quality-aware Relevance Estimation
 
-Code for the paper:
-"Query-adaptive Video Summarization via Quality-aware Relevance Estimation"- ACM Multimedia 2017
-Arun Balajee Vasudevan\*, Michael Gygli\*, Anna Volokitin, Luc Van Gool(\* denotes equal contribution)  
+This project allows to create query-specific thumbnails and summaries.
+I.e. the results are adapted to a user-specified text query 
+through the use of an textual-visual embedding. 
+
+For more information, see our paper:
+
+"Query-adaptive Video Summarization via Quality-aware Relevance Estimation" - ACM Multimedia 2017
+Arun Balajee Vasudevan\*, Michael Gygli\*, Anna Volokitin, Luc Van Gool (\* denotes equal contribution)  
 CVLab, ETH Zurich
 
 ### Installation
@@ -28,7 +33,8 @@ Run `thumbnail_demo.ipynb`.
 Run `summarization_demo.ipynb`.
 
 ### Example
-We produce the summarization result for different queries for the [**video**](https://www.youtube.com/watch?v=oRdt9TndBVM). Green color scores represent the similarity scores for the corresponding queries.
+We produce the summarization result for different queries for the [**video**](https://www.youtube.com/watch?v=oRdt9TndBVM).
+Green color scores represent the similarity scores for the corresponding queries.
 ![Image](https://people.ee.ethz.ch/~arunv/images/summarize_result.png)
 
 If you use the relevance prediction of this code please cite:
