@@ -7,6 +7,7 @@ __email__ = "arunv@vision.ee.ethz.ch"
 
 import numpy as np
 import gm_submodular
+import gm_submodular.example_objectives as ex
 import model
 import theano
 import lasagne
