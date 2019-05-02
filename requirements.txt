@@ -1,8 +1,8 @@
-theano
-lasagne
+theano==0.8.0
+lasagne==0.1
 numpy
 scipy
 gensim==0.12.3
-youtube-dl
-pafy
+youtube-dl==2016.05.10
+pafy==0.5.0
 git+https://github.com/gyglim/gm_submodular.git
